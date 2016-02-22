@@ -1,0 +1,678 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*General Fonts
+font-family: 'Raleway', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+/*General Styles */
+
+html { font-size: 62.5%;}
+
+body { font-family: 'Ubuntu', sans-serif;}
+
+ul {padding: 0;}
+
+ul li { list-style: none;}
+
+a { text-decoration: none;}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h3, h4, h5 {
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+}
+
+h3 { font-size: 1.6rem;}
+
+h5 { font-size: 1.4rem;}
+
+
+/*Navigation Code Starts*/
+.logo {
+	float: left;
+	padding: 3rem 0 3rem 0;
+}
+
+nav ul {float: right;}
+
+nav ul li {
+	float: left;
+	display: inline-block;
+	text-align: right;
+	padding: 2rem 0 2rem 4rem;
+}
+
+nav ul li a{
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: black;
+}
+
+nav ul li:hover a {
+	color: #10EECC;
+}
+      /*I  couldn't get the hamburger menu to work the way I wanted, saving the code to try again later*/
+/*nav {
+  background-color: #fff;
+  position: fixed;
+  top: -5rem;
+  height: 5rem;
+  left: 78rem;
+  margin: 0;
+  padding: 0;
+  transition: all 1s;
+  z-index: 100;
+}
+
+input[type=checkbox]:checked ~ nav{
+  top: 0;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label[for="toggle"] {
+        float: right;
+}*/
+
+/*Main Page Hero Section Code*/
+
+.hero {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+}
+
+.hero img {width: 100%;}
+
+.hero h2, .hero p {
+	top: 50%;
+	position: absolute;
+}
+
+.hero h2 {
+	text-transform: uppercase;
+	font-size: 6.0rem;
+	font-weight: 300;
+	top: 23rem;
+	left: 5rem;
+	letter-spacing: 0.5rem;;
+	position: absolute;
+	z-index: 1;
+}
+
+.hero h2::after {
+	content: "";
+    width: 30rem;
+    height: 7rem;
+    display: block;
+    position: absolute;
+    left: 23rem;
+    bottom: -0.5rem;
+    background-color: #10EECC;
+    z-index: -1;
+}
+
+.hero p {
+	font-size: 2.9rem;
+	top: 33rem;
+	left: 7.2em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/*About Code Starts*/
+
+.container {
+	width: 50%;
+	float: left;
+	padding-top: 8.0rem;
+}
+
+.aboutInfo {padding-top: 3rem;}
+
+.aboutInfo h3 {
+	margin: 0;
+	padding-top: 3rem;
+}
+
+.aboutInfo h3 span {
+	border-bottom: 1px solid #000;
+	padding-bottom: 1.0rem;
+}
+
+.aboutInfo p span {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+.aboutInfo p {
+	font-size: 1.4rem;
+	padding-top: 2.0rem;
+	line-height: 2.3rem;
+}
+
+.imageHolder img {width: 100%;}
+
+.imageHolder {float: right;}
+
+/*Portfolio Code Starts*/
+
+.portfolio {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+.portfolio h3 span {
+	border-bottom: 1px solid #000;
+	padding-bottom: 1.0rem;
+}
+
+.portfolio p {
+	padding-top: 2.0rem;
+	font-size: 1.3rem;
+}
+
+.portfolio ul {padding: 6rem 0 0 0;}
+
+.work {
+	float: left;
+	width: 33.3%;
+	padding-right: 3rem;
+}
+
+.work span {
+	border-bottom: 1px solid #000;
+	padding-bottom: 1.0rem;
+}
+
+.work p {
+	padding: 0;
+	line-height: 2rem;
+	font-size: 1.3rem;
+}
+
+.service li:hover {color: #10EECC;}
+
+/*Service Section Code Start*/
+.service {padding-top: 5rem;}
+
+.service p {
+	font-size: 1.3rem;
+	padding-top: 1rem	;
+}
+
+.workList {padding-top: 5rem;}
+
+.workList ul li {
+	float: left;
+	padding: 2rem;
+	font-size: 1.6rem;
+}
+
+.workList li:hover a {color: #10EECC;}
+
+.workList a {color: #000;}
+
+.service span { color: #10EECC;}
+
+.service h3 span {
+	border-bottom: 1px solid #000;
+	padding-bottom: 1rem;
+	color: #000;
+}
+
+ul li.hamburger {background-color: #10EECC;}
+
+/*Gallery Image Code Starts*/
+
+.galleryItem {
+	padding: 1.5rem;
+	float: left;
+	position: relative;
+}
+
+.galleryItem img {
+	width: 100%;
+	display: block;
+}
+
+ul li.galleryItem:nth-child(3n+1) {
+	padding-left: 0;
+}
+
+ul li.galleryItem:nth-child(3n+3){
+	padding-right: 0;
+}
+
+.overlay1 {
+	margin: 0;
+	color: #fff;
+	background: rgba(16,238,204,0.7);
+	border: .2rem solid black;
+	position: absolute;
+	top: 1.5em;
+	bottom: 1.5rem;
+	left: 0;
+	right: 1.5rem;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.overlay2 {
+	margin: 0;
+	color: #fff;
+	background: rgba(16,238,204,0.7);
+	border: .2rem solid black;
+	position: absolute;
+	top: 1.5em;
+	bottom: 1.5rem;
+	left: 1.5rem;
+	right: 1.5rem;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.overlay3 {
+	margin: 0;
+	color: #fff;
+	background: rgba(16,238,204,0.7);
+	border: .2rem solid black;
+	position: absolute;
+	top: 1.5em;
+	bottom: 1.5rem;
+	left: 1.5rem;
+	right: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.overlay i {
+	color: teal;
+	font-size: 2rem;
+}
+
+.likes {
+	position: relative;
+	color: #000;
+	padding: 1rem;
+}
+
+.likes p {margin: 0;}
+
+.galleryDescrip {
+	position: relative;
+	bottom: -26rem;
+	color: #000;
+	font-weight: bold;
+	padding-left: 2rem;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+}
+
+.galleryDescrip p {margin: .1rem;}
+
+p.overlayHeader { font-size: 1.6rem;}
+
+.galleryItem:hover .overlay {	opacity: 1;}
+
+
+/*Loading Button Code*/
+
+.loadButton i {
+	text-align: center;
+	font-size: 3rem;
+	display: block;
+	padding: 6rem 0;
+}
+
+/*Banner Section Code*/
+.banner {position: relative;}
+
+.newsletter, .subscribe {
+	width: 50%;
+	float: left;
+}
+
+.newsletter {
+    background-color: #10EECC;
+    padding: 10rem;
+}
+
+.newsletter p {
+	font-size: 2.5rem;
+	padding: .2rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	margin: 0 auto;
+}
+
+.newsletter p span {font-weight: bold;}
+
+.subscribe {
+	background-image: url(../images/clock.jpg);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.subscribe img {width: 100%;}
+
+form.subscribeBox {
+	position: absolute;
+    background-color: #fff;
+    padding: 6rem 3rem;
+    top: 4.3rem;
+    right: 4rem;
+    width: 85%;
+}
+
+input {padding: 1rem;}
+
+.subscribeEmail {
+	width: 100%;
+	padding: .8rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+
+.submitButton {
+    background-color: #10EECC;
+    width: 35%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-left:15rem;
+    border: none;
+}
+
+/*Footer Code Starts*/
+.footerWrapper {
+	width: 100%;
+	background-color: #ECECEA;
+	margin-top: 9rem;
+	padding: 3rem 0;
+}
+
+.footerInfo {
+	width: 33.33%;
+	float: left;
+	padding: 4rem 0;
+}
+
+.footerInfo p {font-size: 1.2rem;}
+
+.footerInfo h4{font-size: 1.6rem;}
+
+.footerInfo ul {padding: 3rem 0 0 8rem;}
+
+.footerInfo ul li {
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+
+.footerInfo i {
+	padding: 1rem;
+	color: black;
+	font-size: 1.4rem	;
+}
+
+.footerInfo li:hover i {color: #10EECC;}
+
+.copyright {
+	text-align: center;
+	clear: both;
+	padding-top: 2.5rem;
+	text-transform: uppercase;
+}
+
+.copyright p {
+	font-size: 1.4rem;
+	letter-spacing: .5rem;
+}
+
+.info3 {padding-left: 25rem;}
+
+/*Blog Code Starts Here */
+.blogHero  {
+	background-image: url(../images/blog_hero.jpg);
+	height: 50vh;
+	position: relative;
+}
+
+.blogPost {
+	position: absolute;
+	top: 2rem;
+	bottom: 2rem;
+	right: 2rem;
+	background-color: rgba(255,255,255,0.7);
+}
+
+.blogPost h2 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	padding: 8rem 11rem 1rem;
+}
+
+.blogPost h2 span {
+	border-bottom: .1rem solid #000;
+	padding-bottom: 1rem;
+}
+
+.blogPost p {
+	text-align: center;
+	font-size: 1.8rem;
+	letter-spacing: .4rem;
+}
+
+.blog {
+	margin-top: 9rem;
+	position: relative;
+}
+
+.blogInfo {
+	background-color: #3D3D3D;
+	position: absolute;
+	top: 4rem;
+	bottom: 4rem;
+	right: 0;
+	color: #fff;
+}
+
+.blogInfo2 {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.blogInfo h4 {
+	font-size: 2.5rem;
+	margin: 0;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.blogInfo p {
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+p.info2 {
+	font-size: 1.4rem;
+	line-height: 3rem;
+}
+
+.blogInfo2 img {float: right;}
+
+/*Pages Code starts*/
+
+.pages {padding: 5rem 0;}
+
+.pages ul {
+	float: right;
+	padding: 3rem 0;
+}
+
+.pages ul li {
+	float: left;
+	margin: .5rem;
+	font-weight: bold;
+}
+
+.pages ul li a {
+	padding: 1.7rem;
+	border: 1px solid lightgrey;
+	color: #000;
+}
+
+.pages ul li:hover a {
+    background-color: #10EECC;
+	color: #fff;
+}
+
+/*Contact Page Code*/
+
+.contactHero {
+	background-image: url(../images/contact-bg.jpg);
+	height: 55vh;
+	position: relative;
+}
+
+.icon {
+	position: absolute;
+	background-color: #fff;
+	padding: 1rem;
+	top: 21rem;
+  left: 45rem;
+  width: 6rem;
+	height: 3.5rem;
+}
+
+.icon img {
+	width: 100%;
+	position: relative;
+}
+
+.contactHero i {
+	position: absolute;
+	color: #fff;
+	font-size: 2rem;
+	top: 23.5rem;
+  left: 47rem;
+  width: 6rem;
+
+}
+
+.contactBox{
+	position: absolute;
+	top: 2rem;
+	bottom: 2rem;
+	right: 2rem;
+	background-color: rgba(255,255,255,0.7);
+}
+
+.contactBox h3 {
+	font-size: 5.2rem;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	padding: 12rem 11rem 3rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+.contactBox h3 span {
+	border-bottom: 1px solid #000;
+	padding-bottom: 1rem;
+}
+
+.contactBox p {
+	text-align: center;
+	font-size: 1.6rem;
+	letter-spacing: .4rem;
+	margin: 0;
+}
+
+.contacts {
+	width: 30%;
+	float: left; 
+}
+
+form {
+	width: 70%;
+	float: left;
+}
+
+.contactInfo {
+	width: 100%;
+	margin-top: 8rem;
+}
+
+.innerContact img {float: left;}
+
+.innerContact h5 {
+	font-weight: bold;
+	letter-spacing: .4rem;
+	padding-left: 4rem;
+	margin: 0;
+}
+
+.innerContact p {
+	padding-left: 4rem;
+	font-size: 1.4rem;
+	letter-spacing: .2rem;
+}
+
+.innerContactInfo {padding-bottom: 3rem;}
+
+/*Form Code Section*/
+
+.form {
+	width: 50%;
+	float: left;
+}
+
+.myInput {
+	width: 90%;
+	text-transform: uppercase;
+	padding: 1rem;
+	font-size: 1.4rem;
+	margin-top: 4rem;
+}
+
+textarea {height: 12rem;}
+
+.submit {
+	width: 90%;
+	margin-top: 4rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing:.3rem;
+	font-weight: bold;
+    background-color: #10EECC;
+	border: none;
+	color: #fff;
+}
+
+.myInput:focus {
+	outline: none;
+	border: 1px solid #000;
+}
